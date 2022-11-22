@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get length of Last World</title>
+</head>
+<body>
+    <script>
+        
+    function getLengthofLastWord(s){
+
+        let s = 'Hello World'
+        let x = s.trim().split(' ')
+        console.log(x)
+        let lastword = x[x.length-1]
+        let result = lastword.split('')
+        console.log(result.length)
+    }
+     
+    getLengthofLastWord()
+    </script>
+</body>
+</html>
