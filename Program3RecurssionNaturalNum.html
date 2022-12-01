@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurrsion Natural Number </title>
+</head>
+<body>
+    <script>
+ // 1.  WAP to print first 50 natural numbers using recursion (1,2,3,4....)
+//Descending Order
+ function getNaturalNumbers(num){
+if(num > 50){
+    return;
+}
+ getNaturalNumbers(num+1)
+console.log(num)
+}
+getNaturalNumbers(1)
+
+//Acsending Order
+function getNaturalNumbers(num){
+if(num > 50){
+    return;
+}
+console.log(num)   //Just shifted print command   
+getNaturalNumbers(num+1)
+}
+getNaturalNumbers(1)
+    </script>
+</body>
+</html>
