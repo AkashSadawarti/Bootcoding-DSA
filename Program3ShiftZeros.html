@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shift Zeros to Last</title>
+</head>
+<body>
+    <script>
+        let Array = [0,1,0,3,2]
+        let x
+        function shiftZeros(){
+      for(i=0;i<Array.length;i++)
+ {
+    if(Array[i] === 0)
+    {
+       shiftZeros(Array,Array[i],Array.length-1)      
+    }
+ }
+}
+x = shiftZeros()
+console.log(x)
+    </script>
+</body>
+</html>
