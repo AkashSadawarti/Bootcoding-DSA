@@ -10,7 +10,8 @@
  
     <script>
         //WAP to print the array elements using recursion
-         let a =[1,2,3,4,5]
+  // Print Array recurssive
+        // let a =[1,2,3,4,5]
         // function getArray(a, i){
         //         if(i === a.length){
         //                return;
@@ -20,27 +21,14 @@
         //         }
         // getArray(a,0)
 
-        function ReverseArray(a,i){
-            let n = a.length
-            if(i > n/2){
-                return;
+       // Print Iterative
+        let Array2 = [5,6,7,8,9]
+        function getIterativeArray(){
+            for(i=0;i<Array2.length;i++){
+                console.log(Array2[i])
             }
-            let temp = a[i]
-            a[i] = a[n-i-1]
-            a[n-i-1] = temp 
-            return ReverseArray(a,i+1)
         }
-        console.log(a);
-        ReverseArray(a,0)
-        console.log(a);
-       
-       //Simple 
-        // function ArrayLength(){
-        //     for(i=a.length;i >= 0; i--){
-        //        console.log(a[i]); 
-        //     }
-        // }
-        // ArrayLength()
+       getIterativeArray()
          </script>   
 </body>
 </html>
