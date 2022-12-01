@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurrsion Print Array</title>
+</head>
+<body>
+ 
+    <script>
+        //WAP to print the array elements using recursion
+         let a =[1,2,3,4,5]
+        // function getArray(a, i){
+        //         if(i === a.length){
+        //                return;
+        //             }
+        //             console.log(a[i])
+        //             return getArray(a,i+1)
+        //         }
+        // getArray(a,0)
+
+        function ReverseArray(a,i){
+            let n = a.length
+            if(i > n/2){
+                return;
+            }
+            let temp = a[i]
+            a[i] = a[n-i-1]
+            a[n-i-1] = temp 
+            return ReverseArray(a,i+1)
+        }
+        console.log(a);
+        ReverseArray(a,0)
+        console.log(a);
+       
+       //Simple 
+        // function ArrayLength(){
+        //     for(i=a.length;i >= 0; i--){
+        //        console.log(a[i]); 
+        //     }
+        // }
+        // ArrayLength()
+         </script>   
+</body>
+</html>
