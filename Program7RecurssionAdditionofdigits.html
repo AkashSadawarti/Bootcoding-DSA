@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+   // WAP Sum of Digits 
+
+//Iterative 
+//Addition of digits
+ let Num = 1234
+ let rem;
+ let sum = 0;
+ while(Num != 0){
+    let rem = Num%10;
+         sum = sum + rem
+         Num = Math.floor(Num/10)
+        
+        }
+ console.log(sum);
+
+//recurssion
+// function getAddRecurrsion(num,sum){
+//    if(num === 0){
+//        return 0;
+//    }
+//    sum = Math.floor(num/10)
+//    return getAddRecurrsion(num%10 + sum)
+//    console.log(num)
+// }
+// getAddRecurrsion()
+</script>    
+</body>
+</html>
+
