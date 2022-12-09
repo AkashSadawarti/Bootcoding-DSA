@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary</title>
+</head>
+<body>
+    <script>
+
+        //Program with parameters and function created differently
+        // let basesalary = 30000
+        // let overtime = 20
+        // let rate = 25
+        // function getSalary(basesalary,overtime,rate){
+        //     console.log(basesalary + (overtime * rate)); 
+        // }
+        // getSalary();
+
+        //Encasulation 
+      //  Program type 2 with OOPs, where parameters are used as properties
+        let Employee = {
+            basesalary1 : 25000,
+            overtime1 : 25,
+            rate1 : 10,
+            getwage : function(){
+                  console.log(this.basesalary1 + (this.overtime1*this.rate1)); 
+            }
+        }
+        Employee.getwage();
+    </script>
+</body>
+</html>
