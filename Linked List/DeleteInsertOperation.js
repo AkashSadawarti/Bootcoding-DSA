@@ -12,7 +12,6 @@ let head1 = new Node1(10)
 let second1 = new Node1(20)
 let third1 = new Node1(30)
 let fourth1 = new Node1(40)
-//let lastNode = new Node1(200)
 
 head1.next = second1;
 second1.next = third1;

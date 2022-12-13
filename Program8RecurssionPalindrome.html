@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <script>
+//          let Num = 1234
+//  let rem;
+//  let sum = 0;
+//  while(Num != 0){
+//     let rem = Num%10;
+//          sum = sum + rem
+//          Num = Math.floor(Num/10)
+        
+//         }
+
+        let num = 121;
+        let reverseNum = 0 
+      
+            if(num < 0){
+                console.log('Number is not Positive')
+            }
+            while(num != 0){
+                reverseNum = num%10 + reverseNum*10 
+                num = Math.floor(num/10) 
+            }
+            let result = reverseNum
+            if(num == result){
+                console.log('num is Palindrome')
+            }
+        
+        //Using Reverse Method
+        // function Reverse(){
+        //     if(num < 0){
+        //         console.log(`${num} is  Negative Number`)
+        //     }
+        //     const num1 = num.toString();
+        //     const newvalue = num1.split('')
+        //     const reversevalue = newvalue.reverse()
+        //     const reversestring = reversevalue.join('');
+        //     const num2 = parseInt(reversestring);
+        //     if(num == num2){
+        //         console.log('Number is Palindrome')
+        //     }else {
+        //         console.log('Number is not Palindrome')
+        //     }
+        // }
+        // Reverse();
+
+
+        //note for #map  data get stored by value of data and stack size
+        //let num = 63281940
+        //if stack size is 16 by length so by index it would be 0 to 15 
+        result = num%16
+        console.log(result);
+
+         </script>
+</body>
+</html>
