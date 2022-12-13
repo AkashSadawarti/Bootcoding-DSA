@@ -7,7 +7,7 @@ class Node1{
 }
 
 
-let NewNode = new Node1(150)
+
 let head1 = new Node1(10)
 let second1 = new Node1(20)
 let third1 = new Node1(30)
@@ -25,7 +25,7 @@ function printlinkedlist(head1){
     while(temp != null){
         console.log(temp.data);
         temp = temp.next;
-    }
+    }g
 }
 
 //Delete Last Node
@@ -52,6 +52,7 @@ function deletelastNode(head1){
 
 function insertfirstnode(head1){
     console.log("insert new first node ")
+    let NewNode = new Node1(150)
     NewNode.next = head1;
     head1 = NewNode;
     printlinkedlist(head1)
@@ -68,8 +69,24 @@ function insertlastnode(head1){
     t.next = lastNode;
     printlinkedlist(head1)
 }
+
+//Insertion new node in middle
+function insertmiddlenode(head1){
+    console.log('Insert new node in middle')
+    let middlenode = new Node1(555)
+    let temp1 = head1
+    // while(temp1.length/2 != null){
+    //     if(temp1.length/2 != null){
+    //         temp1.next = middlenode
+    //     }
+    //     temp1 = temp1.next;
+    //     printlinkedlist(head1)
+    // }
+}
+
 printlinkedlist(head1)
 deletefirstNode(head1)
 deletelastNode(head1)
 insertfirstnode(head1)
 insertlastnode(head1)
+insertmiddlenode(head1)
